@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Catalina Bernal · consultora en IA responsable e inteligencia financiera</title>
-<meta name="description" content="Catalina Bernal, economista y física. Consultoría en modelos para detectar fraude tributario, lavado de activos y activos ilícitos, con enfoque de inteligencia artificial responsable.">
-<meta property="og:title" content="Catalina Bernal · IA responsable e inteligencia financiera">
-<meta property="og:description" content="Modelos que encuentran lo que no cuadra, hechos con criterio.">
+<title>Catalina Bernal · IA responsable y ciencia de datos</title>
+<meta name="description" content="Catalina Bernal, economista y física. Consultoría, auditoría y desarrollo de sistemas de inteligencia artificial responsable para organizaciones de cualquier industria.">
+<meta property="og:title" content="Catalina Bernal · IA responsable y ciencia de datos">
+<meta property="og:description" content="Inteligencia artificial que resuelve problemas reales, hecha con criterio.">
 <meta property="og:type" content="website">
 <!-- Cambia TU-USUARIO por tu usuario de GitHub para que la imagen salga al compartir el enlace -->
 <meta property="og:url" content="https://TU-USUARIO.github.io/">
 <meta property="og:image" content="https://TU-USUARIO.github.io/img/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='32' fill='%2302403C'/><circle cx='44' cy='22' r='7' fill='%23FF9B43'/></svg>">">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='32' fill='%2302403C'/><circle cx='44' cy='22' r='7' fill='%23FF9B43'/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Fraunces:opsz,ital,wght@9..144,1,400&display=swap" rel="stylesheet">
@@ -260,6 +260,23 @@
     .lang{margin-left:auto}
     .tabs{order:3;width:100%;margin-left:0}
   }
+
+  /* ---------- aplicaciones, escalera, especialidad ---------- */
+  .apps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .app{border:1.5px solid var(--line);border-radius:14px;padding:18px}
+  .app .tag{display:block;font:600 10.5px var(--head);letter-spacing:.09em;text-transform:uppercase;color:#C9621A;margin-bottom:8px}
+  .app h3{font-size:16.5px;line-height:1.35}
+  .ladder{background:var(--principal-dark);border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:10px}
+  .rung{border:1px solid #E9FCE840;border-radius:12px;padding:14px 16px;color:var(--principal-light)}
+  .rung b{display:block;font:600 16px var(--head);color:#fff;margin-bottom:3px}
+  .rung b::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--c);margin-right:9px;vertical-align:middle}
+  .rung > span{font-size:13px;opacity:.75;line-height:1.5}
+  .especialidad .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+  .spec-pills{margin-top:18px}
+  .spec-pills li{background:var(--contraste-light);border-color:transparent;color:#8A4310}
+  #cardsSvc{grid-template-columns:repeat(3,1fr)}
+  @media (max-width:820px){ .apps,#cardsSvc,.especialidad .wrap{grid-template-columns:1fr} .especialidad .band{order:0} .ladder{order:0} }
+  @media (min-width:521px) and (max-width:820px){ .apps{grid-template-columns:1fr 1fr} }
 </style>
 </head>
 <body>
@@ -268,7 +285,7 @@
   <div class="wrap">
     <a class="brandline" href="#inicio" aria-label="Catalina Bernal">
       <span class="mono" aria-hidden="true"></span>
-      <span><span class="wordmark">catalina bernal<span>.</span></span><span class="tagline"><span data-l="es">ia responsable · inteligencia financiera</span><span data-l="en">responsible ai · financial intelligence</span></span></span>
+      <span><span class="wordmark">catalina bernal<span>.</span></span><span class="tagline"><span data-l="es">ia responsable · ciencia de datos</span><span data-l="en">responsible ai · data science</span></span></span>
     </a>
     <nav class="tabs" aria-label="Secciones / Sections">
       <a href="#inicio"><span data-l="es">inicio</span><span data-l="en">home</span></a>
@@ -287,14 +304,14 @@
 <main>
 
 <!-- =============================== INICIO / HOME =============================== -->
-<div class="view" id="v-inicio" data-title-es="Catalina Bernal · IA responsable e inteligencia financiera" data-title-en="Catalina Bernal · Responsible AI and financial intelligence">
+<div class="view" id="v-inicio" data-title-es="Catalina Bernal · IA responsable y ciencia de datos" data-title-en="Catalina Bernal · Responsible AI and data science">
   <section class="hero">
     <div class="wrap">
       <div>
-        <h1 data-l="es">Modelos que encuentran lo que no cuadra, hechos con <em>criterio.</em></h1>
-        <h1 data-l="en">Models that find what doesn't add up, built with <em>judgment.</em></h1>
-        <p class="lede" data-l="es">Soy Catalina Bernal, economista y física de la Universidad de los Andes. Desde hace cinco años diseño modelos para entidades públicas y privadas que necesitan detectar evasión tributaria, gestionar riesgo financiero o revisar si sus sistemas de inteligencia artificial tratan a todos por igual.</p>
-        <p class="lede" data-l="en">I'm Catalina Bernal, an economist and physicist from Universidad de los Andes. For the past five years I've been building models for public and private organizations that need to detect tax evasion, manage financial risk, or check whether their AI systems treat everyone fairly.</p>
+        <h1 data-l="es">Inteligencia artificial que resuelve problemas reales, hecha con <em>criterio.</em></h1>
+        <h1 data-l="en">AI that solves real problems, built with <em>judgment.</em></h1>
+        <p class="lede" data-l="es">Soy Catalina Bernal, economista y física de la Universidad de los Andes. Aplico machine learning y modelación matemática a problemas económicos, sociales y ambientales, y acompaño a organizaciones de distintas industrias a auditar, gobernar y construir sus sistemas de inteligencia artificial de forma responsable.</p>
+        <p class="lede" data-l="en">I'm Catalina Bernal, an economist and physicist from Universidad de los Andes. I apply machine learning and mathematical modeling to economic, social and environmental problems, and I help organizations across industries audit, govern and build their AI systems responsibly.</p>
         <div class="btns">
           <a class="btn" href="#servicios"><span data-l="es">Ver servicios</span><span data-l="en">See services</span></a>
           <a class="btn line" href="#contacto"><span data-l="es">Escríbeme</span><span data-l="en">Get in touch</span></a>
@@ -328,23 +345,37 @@
     <div class="wrap">
       <div>
         <p class="kicker"><span data-l="es">Qué hago</span><span data-l="en">What I do</span></p>
-        <h2 class="sec-title" data-l="es">Detectar el riesgo sin castigar a quien no corresponde.</h2>
-        <h2 class="sec-title" data-l="en">Detecting risk without penalizing the wrong people.</h2>
-        <p data-l="es">Una alerta de fraude o de lavado casi siempre termina en algo concreto: una fiscalización, una cuenta bloqueada, una investigación. Por eso me importa que el modelo acierte, claro, pero también que se pueda explicar y que no se equivoque más con unos grupos que con otros.</p>
-        <p data-l="en">A fraud or money-laundering alert almost always leads to something real: an audit, a frozen account, an investigation. That's why I care about accuracy, of course, but also about whether the model can be explained and whether it gets things wrong more often for some groups than for others.</p>
-        <div class="btns"><a class="btn" href="#servicios"><span data-l="es">Conocer el portafolio</span><span data-l="en">Explore services</span></a></div>
+        <h2 class="sec-title" data-l="es">Tres servicios, según dónde esté tu organización.</h2>
+        <h2 class="sec-title" data-l="en">Three services, depending on where your organization stands.</h2>
+        <p data-l="es">Hay organizaciones que apenas están pensando en usar inteligencia artificial, otras que ya tienen modelos tomando decisiones y otras que van a construir uno nuevo. Para cada caso hay un servicio distinto, y en los tres la pregunta es la misma: que el sistema funcione bien y que no afecte injustamente a nadie.</p>
+        <p data-l="en">Some organizations are just starting to think about AI, others already have models making decisions, and others are about to build a new one. Each case calls for a different service, and in all three the question is the same: that the system works well and doesn't treat anyone unfairly.</p>
+        <div class="btns"><a class="btn" href="#servicios"><span data-l="es">Conocer los servicios</span><span data-l="en">Explore services</span></a></div>
       </div>
       <ul class="link-list">
-        <li><a href="#servicios"><h3><span data-l="es">Fiscalización tributaria</span><span data-l="en">Tax enforcement</span></h3><span><span data-l="es">omisos, inexactos, posibles fraudes</span><span data-l="en">non-filers, under-reporting, possible fraud</span></span></a></li>
-        <li><a href="#servicios"><h3><span data-l="es">Inteligencia financiera</span><span data-l="en">Financial intelligence</span></h3><span><span data-l="es">rastreo de activos ilícitos</span><span data-l="en">tracing illicit assets</span></span></a></li>
-        <li><a href="#servicios"><h3><span data-l="es">Riesgo LA/FT</span><span data-l="en">AML/CFT risk</span></h3><span><span data-l="es">SARLAFT y monitoreo</span><span data-l="en">SARLAFT and transaction monitoring</span></span></a></li>
-        <li><a href="#servicios"><h3><span data-l="es">Auditoría de sesgos</span><span data-l="en">Bias audits</span></h3><span><span data-l="es">modelos ya en uso</span><span data-l="en">models already in use</span></span></a></li>
-        <li><a href="#servicios"><h3><span data-l="es">Gobernanza de IA</span><span data-l="en">AI governance</span></h3><span><span data-l="es">diseño responsable</span><span data-l="en">responsible by design</span></span></a></li>
+        <li><a href="#servicios"><h3><span data-l="es">Consultoría</span><span data-l="en">Consulting</span></h3><span><span data-l="es">gobernanza y bases para empezar</span><span data-l="en">governance and foundations</span></span></a></li>
+        <li><a href="#servicios"><h3><span data-l="es">Auditoría</span><span data-l="en">Audit</span></h3><span><span data-l="es">evaluación independiente de modelos en uso</span><span data-l="en">independent review of models in use</span></span></a></li>
+        <li><a href="#servicios"><h3><span data-l="es">Desarrollo de sistemas de IA</span><span data-l="en">AI system development</span></h3><span><span data-l="es">responsables desde el diseño</span><span data-l="en">responsible by design</span></span></a></li>
+        <li><a href="#especialidad"><h3><span data-l="es">Especialidad</span><span data-l="en">Specialty</span></h3><span><span data-l="es">inteligencia financiera y tributaria</span><span data-l="en">financial and tax intelligence</span></span></a></li>
       </ul>
     </div>
   </section>
 
   <section>
+    <div class="wrap">
+      <p class="kicker"><span data-l="es">Experiencia</span><span data-l="en">Experience</span></p>
+      <h2 class="sec-title"><span data-l="es">Problemas en los que he trabajado.</span><span data-l="en">Problems I've worked on.</span></h2>
+      <div class="apps">
+        <div class="app"><span class="tag">Quantil</span><h3><span data-l="es">Evaluaciones de impacto sobre bienestar social</span><span data-l="en">Impact evaluations on social welfare</span></h3></div>
+        <div class="app"><span class="tag">Quantil</span><h3><span data-l="es">Sistemas de recomendación</span><span data-l="en">Recommender systems</span></h3></div>
+        <div class="app"><span class="tag">Quantil</span><h3><span data-l="es">Análisis de texto</span><span data-l="en">Text analysis</span></h3></div>
+        <div class="app"><span class="tag">Quantil</span><h3><span data-l="es">Detección de anomalías y posibles fraudes en declaraciones de impuestos</span><span data-l="en">Anomaly and possible fraud detection in tax returns</span></h3></div>
+        <div class="app"><span class="tag">Criteria</span><h3><span data-l="es">Detección y mitigación de sesgos en modelos de machine learning</span><span data-l="en">Bias detection and mitigation in machine learning models</span></h3></div>
+        <div class="app"><span class="tag"><span data-l="es">Investigación</span><span data-l="en">Research</span></span><h3><span data-l="es">Estereotipos en modelos de IA generativa en español</span><span data-l="en">Stereotypes in Spanish-language generative AI</span></h3></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
     <div class="wrap">
       <div class="paper">
         <div class="big" aria-hidden="true">AIES<br>2025</div>
@@ -441,10 +472,63 @@
     <div class="wrap">
       <div>
         <p class="kicker"><span data-l="es">Portafolio de servicios</span><span data-l="en">Services portfolio</span></p>
-        <h1 data-l="es">Inteligencia financiera y tributaria, con modelos que se pueden <em>explicar.</em></h1>
-        <h1 data-l="en">Financial and tax intelligence, with models you can <em>explain.</em></h1>
-        <p class="lede" data-l="es">Acompaño a entidades públicas y al sector financiero en un problema muy concreto: encontrar en los datos la evasión, el lavado o los movimientos de dinero que no tienen explicación. Construyo los modelos, verifico que no se ensañen con ningún grupo y dejo documentado por qué se generó cada alerta.</p>
-        <p class="lede" data-l="en">I work with public agencies and financial institutions on a very specific problem: finding tax evasion, money laundering, or unexplained money flows in their data. I build the models, check that they don't unfairly target any group, and document why each alert was raised.</p>
+        <h1 data-l="es">Tres formas de usar la inteligencia artificial con <em>responsabilidad.</em></h1>
+        <h1 data-l="en">Three ways to use AI <em>responsibly.</em></h1>
+        <p class="lede" data-l="es">Los servicios se basan en la metodología que desarrollamos en Criteria y aplican a cualquier industria. Cuál conviene depende de la madurez de tu organización: si todavía no tiene IA en producción, si ya la tiene o si va a construir un sistema nuevo.</p>
+        <p class="lede" data-l="en">These services build on the methodology we developed at Criteria and apply to any industry. Which one fits depends on your organization's maturity: whether it has no AI in production yet, already has it, or is about to build a new system.</p>
+      </div>
+      <div class="ladder" aria-hidden="true">
+        <div class="rung" style="--c:#E9FCE8"><b><span data-l="es">Consultoría</span><span data-l="en">Consulting</span></b><span><span data-l="es">Todavía no hay IA en producción, o la hay sin control.</span><span data-l="en">No AI in production yet, or it runs without controls.</span></span></div>
+        <div class="rung" style="--c:#E7A7D9"><b><span data-l="es">Auditoría</span><span data-l="en">Audit</span></b><span><span data-l="es">Ya hay modelos informando o tomando decisiones.</span><span data-l="en">Models are already informing or making decisions.</span></span></div>
+        <div class="rung" style="--c:#FF9B43"><b><span data-l="es">Desarrollo de sistemas de IA</span><span data-l="en">AI system development</span></b><span><span data-l="es">Se va a construir o reentrenar un sistema.</span><span data-l="en">A system is about to be built or retrained.</span></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="enfoque mint">
+    <div class="wrap">
+      <div>
+        <p class="kicker"><span data-l="es">Enfoque</span><span data-l="en">Approach</span></p>
+        <h2 class="sec-title" data-l="es">Un modelo también toma <em>decisiones</em> sobre personas.</h2>
+        <h2 class="sec-title" data-l="en">A model also makes <em>decisions</em> about people.</h2>
+      </div>
+      <div data-l="es">
+        <p>Cuando un sistema de inteligencia artificial decide a quién se le aprueba un crédito, qué caso se revisa primero o quién recibe un beneficio, sus errores tienen consecuencias. Si se equivoca más con un grupo que con otro, ese error se repite miles de veces.</p>
+        <p>Por eso, además de medir cuánto acierta un modelo, reviso con quién falla y si sus decisiones se pueden explicar a quien las recibe, a un comité o a un regulador.</p>
+      </div>
+      <div data-l="en">
+        <p>When an AI system decides who gets a loan, which case is reviewed first or who receives a benefit, its mistakes have consequences. If it's wrong more often for one group than for another, that mistake gets repeated thousands of times.</p>
+        <p>So beyond measuring how accurate a model is, I look at who it fails and whether its decisions can be explained to the people affected, to a committee or to a regulator.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="kicker"><span data-l="es">Servicios</span><span data-l="en">Services</span></p>
+      <h2 class="sec-title"><span data-l="es">Qué ofrezco</span><span data-l="en">What I offer</span></h2>
+      <p class="sec-sub"><span data-l="es">Haz clic en cada servicio para ver qué incluye, qué recibe tu equipo y cuánto suele durar.</span><span data-l="en">Click on each service to see what it includes, what your team gets and how long it usually takes.</span></p>
+      <div class="cards" id="cardsSvc"></div>
+      <div class="detail" id="detailSvc" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="especialidad" id="especialidad">
+    <div class="wrap">
+      <div>
+        <p class="kicker"><span data-l="es">Especialidad</span><span data-l="en">Specialty</span></p>
+        <h2 class="sec-title" data-l="es">Inteligencia financiera y <em>tributaria.</em></h2>
+        <h2 class="sec-title" data-l="en">Financial and tax <em>intelligence.</em></h2>
+        <div data-l="es" class="prose">
+          <p>En Quantil trabajé en algoritmos para identificar declarantes anómalos, omisos, inexactos y posiblemente fraudulentos en las declaraciones de distintos impuestos.</p>
+          <p>Con esa experiencia apoyo a entidades públicas y privadas que necesitan encontrar anomalías y posibles fraudes en sus datos, con las mismas exigencias de auditoría y explicabilidad de los tres servicios. El enfoque también sirve para otros problemas de inteligencia financiera, como la identificación de patrones asociados a activos ilícitos.</p>
+        </div>
+        <div data-l="en" class="prose">
+          <p>At Quantil I worked on algorithms to identify anomalous, non-filing, under-reporting and potentially fraudulent taxpayers across different tax returns.</p>
+          <p>Building on that experience, I support public and private organizations that need to find anomalies and possible fraud in their data, with the same audit and explainability standards as the three services. The approach also applies to other financial intelligence problems, such as identifying patterns linked to illicit assets.</p>
+        </div>
+        <ul class="pills spec-pills" data-l="es"><li>Detección de anomalías</li><li>Omisos e inexactos</li><li>Posibles fraudes</li><li>Priorización de casos para revisión</li></ul>
+        <ul class="pills spec-pills" data-l="en"><li>Anomaly detection</li><li>Non-filers and under-reporting</li><li>Possible fraud</li><li>Case prioritization for review</li></ul>
       </div>
       <div class="band">
         <svg class="field" id="field" viewBox="0 0 520 420" role="img" aria-label="Scatter plot / nube de puntos"></svg>
@@ -454,53 +538,17 @@
     </div>
   </section>
 
-  <section class="enfoque mint">
-    <div class="wrap">
-      <div>
-        <p class="kicker"><span data-l="es">Enfoque</span><span data-l="en">Approach</span></p>
-        <h2 class="sec-title" data-l="es">Una alerta también es una <em>decisión</em> sobre alguien.</h2>
-        <h2 class="sec-title" data-l="en">An alert is also a <em>decision</em> about someone.</h2>
-      </div>
-      <div data-l="es">
-        <p>Cuando un modelo marca a un contribuyente como posible evasor o a un cliente como riesgo de lavado, lo que viene después es una fiscalización, una cuenta congelada o una investigación. Si el modelo se equivoca más con un sector, una región o un tipo de persona, ese error se repite miles de veces.</p>
-        <p>Por eso, además de medir cuánto acierta, reviso con quién falla y si cada caso se puede sustentar ante un auditor, un comité o un juez. Es la metodología que desarrollamos en Criteria, llevada al riesgo tributario y financiero.</p>
-      </div>
-      <div data-l="en">
-        <p>When a model flags a taxpayer as a possible evader or a customer as a money-laundering risk, what comes next is an audit, a frozen account, or an investigation. If the model is wrong more often for one sector, region or type of person, that mistake gets repeated thousands of times.</p>
-        <p>So beyond measuring how accurate it is, I look at who it fails and whether each case can be justified to an auditor, a committee or a judge. It's the methodology we built at Criteria, applied to tax and financial risk.</p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <p class="kicker"><span data-l="es">Servicios</span><span data-l="en">Services</span></p>
-      <h2 class="sec-title"><span data-l="es">Qué ofrezco</span><span data-l="en">What I offer</span></h2>
-      <p class="sec-sub"><span data-l="es">Haz clic en cada servicio para ver qué incluye y qué recibe tu equipo al final. Se pueden contratar por separado o combinados.</span><span data-l="en">Click on each service to see what it includes and what your team gets at the end. They can be contracted separately or combined.</span></p>
-      <div class="group">
-        <div class="group-head"><h3><span data-l="es">Detectar</span><span data-l="en">Detect</span></h3><span><span data-l="es">Encontrar los casos que merecen atención</span><span data-l="en">Finding the cases that deserve attention</span></span></div>
-        <div class="cards" id="cardsDetect"></div>
-        <div class="detail" id="detailDetect" aria-live="polite"></div>
-      </div>
-      <div class="group">
-        <div class="group-head"><h3><span data-l="es">Hacerlo responsable</span><span data-l="en">Make it responsible</span></h3><span><span data-l="es">Que los modelos resistan una revisión externa</span><span data-l="en">Models that hold up to external review</span></span></div>
-        <div class="cards two" id="cardsResp"></div>
-        <div class="detail" id="detailResp" aria-live="polite"></div>
-      </div>
-    </div>
-  </section>
-
   <section class="metodo plum">
     <div class="wrap">
       <div>
         <p class="kicker"><span data-l="es">Cómo trabajo</span><span data-l="en">How I work</span></p>
-        <h2 class="sec-title"><span data-l="es">De la pregunta al modelo en operación.</span><span data-l="en">From the question to a working model.</span></h2>
+        <h2 class="sec-title"><span data-l="es">De la pregunta al sistema en operación.</span><span data-l="en">From the question to a working system.</span></h2>
         <p class="sec-sub"><span data-l="es">La idea es que, al terminar, tu equipo pueda operar y ajustar lo que construimos sin depender de mí.</span><span data-l="en">The goal is that, once we're done, your team can run and adjust what we built without depending on me.</span></p>
       </div>
       <div class="steps">
-        <div class="item"><span class="node">1</span><h3><span data-l="es">Entender el problema</span><span data-l="en">Understand the problem</span></h3><p><span data-l="es">Qué se quiere encontrar, con qué datos se cuenta y qué restricciones legales y operativas hay.</span><span data-l="en">What you want to find, what data is available, and which legal and operational constraints apply.</span></p></div>
-        <div class="item"><span class="node">2</span><h3><span data-l="es">Construir y validar</span><span data-l="en">Build and validate</span></h3><p><span data-l="es">Desarrollo el modelo y lo pruebo contra métricas que acordamos desde el inicio, antes de ver resultados.</span><span data-l="en">I develop the model and test it against metrics we agree on at the start, before seeing any results.</span></p></div>
-        <div class="item"><span class="node">3</span><h3><span data-l="es">Revisar sesgos y explicaciones</span><span data-l="en">Review bias and explanations</span></h3><p><span data-l="es">Miro si el error se concentra en algún grupo y si las razones de cada alerta tienen sentido para quien las va a usar.</span><span data-l="en">I check whether errors concentrate in any group and whether the reasons behind each alert make sense to the people who will use them.</span></p></div>
+        <div class="item"><span class="node">1</span><h3><span data-l="es">Entender el problema</span><span data-l="en">Understand the problem</span></h3><p><span data-l="es">Qué decisión apoya el sistema, a quién afecta, con qué datos se cuenta y qué restricciones legales y operativas hay.</span><span data-l="en">Which decision the system supports, who it affects, what data is available, and which legal and operational constraints apply.</span></p></div>
+        <div class="item"><span class="node">2</span><h3><span data-l="es">Construir o evaluar</span><span data-l="en">Build or evaluate</span></h3><p><span data-l="es">Desarrollo o reviso el modelo contra métricas que acordamos desde el inicio, antes de ver resultados.</span><span data-l="en">I develop or review the model against metrics we agree on at the start, before seeing any results.</span></p></div>
+        <div class="item"><span class="node">3</span><h3><span data-l="es">Revisar sesgos y explicaciones</span><span data-l="en">Review bias and explanations</span></h3><p><span data-l="es">Miro si el error se concentra en algún grupo y si las razones de cada decisión tienen sentido para quien las va a usar.</span><span data-l="en">I check whether errors concentrate in any group and whether the reasons behind each decision make sense to the people who will use them.</span></p></div>
         <div class="item"><span class="node">4</span><h3><span data-l="es">Entregar</span><span data-l="en">Hand over</span></h3><p><span data-l="es">Código, documentación y sesiones de trabajo con el equipo que va a operarlo.</span><span data-l="en">Code, documentation and working sessions with the team that will run it.</span></p></div>
       </div>
     </div>
@@ -509,17 +557,13 @@
   <section>
     <div class="wrap">
       <p class="kicker"><span data-l="es">Con quién trabajo</span><span data-l="en">Who I work with</span></p>
-      <h2 class="sec-title"><span data-l="es">Dos lados del mismo problema.</span><span data-l="en">Two sides of the same problem.</span></h2>
-      <p class="sec-sub"><span data-l="es">El Estado persigue el dinero que no se declaró y los bancos deben evitar que el dinero ilícito pase por ellos. Los datos y las tipologías se parecen más de lo que uno pensaría.</span><span data-l="en">Governments chase undeclared money, and banks have to keep illicit money from flowing through them. The data and the typologies are more alike than you'd think.</span></p>
+      <h2 class="sec-title"><span data-l="es">Cualquier organización que use modelos para decidir.</span><span data-l="en">Any organization that uses models to decide.</span></h2>
+      <p class="sec-sub"><span data-l="es">No importa la industria: si un modelo influye en decisiones sobre personas, vale la pena saber cómo se comporta.</span><span data-l="en">The industry doesn't matter: if a model shapes decisions about people, it's worth knowing how it behaves.</span></p>
       <div class="who">
         <div class="pub"><h3><span data-l="es">Sector público</span><span data-l="en">Public sector</span></h3>
-          <p><span data-l="es">Entidades que recaudan, fiscalizan o investigan y que necesitan priorizar mejor con los equipos que tienen.</span><span data-l="en">Agencies that collect, audit or investigate, and need to prioritize better with the teams they have.</span></p>
-          <ul class="pills" data-l="es"><li>Administraciones tributarias</li><li>Secretarías de hacienda</li><li>Unidades de inteligencia financiera</li><li>Entes de investigación</li><li>Superintendencias</li></ul>
-          <ul class="pills" data-l="en"><li>Tax administrations</li><li>Local finance departments</li><li>Financial intelligence units</li><li>Investigative bodies</li><li>Supervisory agencies</li></ul></div>
-        <div class="fin"><h3><span data-l="es">Sector financiero</span><span data-l="en">Financial sector</span></h3>
-          <p><span data-l="es">Instituciones con obligaciones de prevención de lavado que quieren menos falsos positivos y modelos que el supervisor entienda.</span><span data-l="en">Institutions with anti-money-laundering obligations that want fewer false positives and models their supervisor can understand.</span></p>
-          <ul class="pills" data-l="es"><li>Bancos</li><li>Fiduciarias</li><li>Cooperativas</li><li>Fintech</li><li>Áreas de cumplimiento</li></ul>
-          <ul class="pills" data-l="en"><li>Banks</li><li>Trust companies</li><li>Credit cooperatives</li><li>Fintech</li><li>Compliance teams</li></ul></div>
+          <p><span data-l="es">Entidades que usan o quieren usar IA en decisiones que afectan a la ciudadanía y que tienen que responder por ellas.</span><span data-l="en">Agencies that use or plan to use AI in decisions affecting citizens, and that have to answer for them.</span></p></div>
+        <div class="fin"><h3><span data-l="es">Sector privado</span><span data-l="en">Private sector</span></h3>
+          <p><span data-l="es">Empresas que usan modelos para decidir sobre clientes, usuarios o empleados y quieren hacerlo con reglas claras.</span><span data-l="en">Companies that use models to make decisions about customers, users or employees and want clear rules for doing so.</span></p></div>
       </div>
       <div class="btns" style="margin-top:32px"><a class="btn" href="#contacto"><span data-l="es">Hablemos de tu caso</span><span data-l="en">Let's talk about your case</span></a></div>
     </div>
@@ -665,7 +709,8 @@ const tabs=document.querySelectorAll('.tabs a');
 let first=true;
 function route(){
   const id=(location.hash||'#inicio').slice(1);
-  const key=VIEWS.includes(id)?id:'inicio';
+  let key=VIEWS.includes(id)?id:'inicio', anchor=null;
+  if(!VIEWS.includes(id)){ const t=document.getElementById(id); const v=t&&t.closest('.view'); if(v){ key=v.id.slice(2); anchor=t; } }
   VIEWS.forEach(v=>{
     const el=document.getElementById('v-'+v), on=v===key;
     el.hidden=!on;
@@ -673,7 +718,7 @@ function route(){
   });
   tabs.forEach(a=>{ if(a.getAttribute('href')==='#'+key) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current'); });
   const cur=document.querySelector('.tabs a[aria-current]'); if(cur) cur.scrollIntoView({block:'nearest',inline:'nearest'});
-  if(!first) window.scrollTo(0,0);
+  if(anchor) setTimeout(()=>anchor.scrollIntoView({block:'start'}),30); else if(!first) window.scrollTo(0,0);
   if(key==='servicios') playField();
   first=false;
 }
@@ -683,44 +728,28 @@ window.addEventListener('scroll',()=>document.getElementById('topbar').classList
 /* ======================= servicios ======================= */
 const C={verde:{accent:"#02403C",tint:"#E9FCE8"},vino:{accent:"#4D033F",tint:"#FAEDF8"},naranja:{accent:"#C9621A",tint:"#FFF1E1"}};
 const HEAD={es:["Qué hago","Qué recibes"],en:["What I do","What you get"]};
-const DETECT=[
+const SVC=[
  {c:C.verde,
-  es:{tag:"Sector público",name:"Omisos, inexactos y posibles fraudes",desc:"Encontrar quién no declaró, quién declaró de menos y qué casos conviene fiscalizar primero.",para:"<b>Aplica a</b> renta, IVA, retención en la fuente e impuestos territoriales.",
-      does:["Cruce de declaraciones con información exógena y de terceros","Comparación de cada contribuyente con pares de su sector y tamaño","Detección de comportamientos atípicos, con y sin casos históricos etiquetados","Priorización según la probabilidad de hallazgo"],
-      gets:["Modelo y código documentados","Lista priorizada de casos con las razones de cada uno","Tablero para seguir los resultados de la fiscalización"]},
-  en:{tag:"Public sector",name:"Non-filers, under-reporting and possible fraud",desc:"Find who didn't file, who under-reported, and which cases should be audited first.",para:"<b>Applies to</b> income tax, VAT, withholding tax and local taxes.",
-      does:["Cross-checking returns against third-party information","Comparing each taxpayer with peers of the same sector and size","Detecting atypical behavior, with and without labeled historical cases","Prioritizing by likelihood of findings"],
-      gets:["Documented model and code","Prioritized case list with the reasons behind each case","Dashboard to track audit outcomes"]}},
+  es:{tag:"Gobernanza y bases",name:"Consultoría",desc:"Para organizaciones que todavía no tienen IA en producción, o que la tienen sin ningún control. Construimos juntos las bases de gobernanza.",para:"<b>Duración típica:</b> de 3 a 6 meses, por fases. Basta con que exista la voluntad de construir gobernanza y alguien con mandato para implementarla.",
+      does:["Inventario de los sistemas de IA de la organización","Clasificación de riesgo de los sistemas existentes","Diseño del marco de gobernanza: roles, supervisión y escalamiento","Redacción de la política de IA responsable","Capacitación ejecutiva y operativa","Mapeo regulatorio"],
+      gets:["Inventario de IA con clasificación de riesgo","Marco de gobernanza con política, roles y estructura de supervisión","Mapa de cumplimiento regulatorio","Programa de capacitación","Ruta hacia una auditoría o un desarrollo responsable"]},
+  en:{tag:"Governance and foundations",name:"Consulting",desc:"For organizations with no AI in production yet, or with AI running without any controls. We build the governance foundations together.",para:"<b>Typical duration:</b> 3 to 6 months, in phases. All it takes is the will to build governance and someone with the mandate to implement it.",
+      does:["Inventory of the organization's AI systems","Risk classification of existing systems","Governance framework design: roles, oversight and escalation","Drafting the responsible AI policy","Executive and operational training","Regulatory mapping"],
+      gets:["AI inventory with risk classification","Governance framework with policy, roles and oversight structure","Regulatory compliance map","Training program","Roadmap toward an audit or responsible development"]}},
  {c:C.vino,
-  es:{tag:"Investigación",name:"Rastreo de activos ilícitos",desc:"Seguir el dinero entre personas, empresas y cuentas para encontrar testaferros y beneficiarios finales.",para:"<b>Pensado para</b> unidades de inteligencia financiera, fiscalías y equipos de investigación.",
-      does:["Grafos de relaciones societarias, familiares y financieras","Tipologías de lavado de activos y financiación del terrorismo","Incrementos patrimoniales que no cuadran con los ingresos declarados","Cruces con listas restrictivas y bases públicas"],
-      gets:["Mapas de redes que un investigador puede navegar","Reglas y modelos de alerta","Informe de hallazgos para el caso"]},
-  en:{tag:"Investigations",name:"Tracing illicit assets",desc:"Follow the money across people, companies and accounts to uncover front men and hidden beneficial owners.",para:"<b>Designed for</b> financial intelligence units, prosecutors and investigation teams.",
-      does:["Graphs of corporate, family and financial relationships","Money-laundering and terrorist-financing typologies","Wealth increases that don't match declared income","Cross-checks with sanctions lists and public databases"],
-      gets:["Network maps investigators can navigate","Alert rules and models","Findings report for the case"]}},
+  es:{tag:"Evaluación independiente",name:"Auditoría",desc:"Para organizaciones que ya tienen modelos informando o tomando decisiones. Evalúo el sistema de forma independiente en ocho dimensiones de responsabilidad.",para:"<b>Duración típica:</b> de 6 a 12 semanas por sistema. Se necesita al menos un modelo en producción, con documentación básica y un responsable técnico disponible.",
+      does:["Rendición de cuentas: trazabilidad y responsables","Transparencia: calidad de la documentación","Equidad: métricas desagregadas y análisis de sesgo","Privacidad y seguridad: manejo de datos","Confiabilidad: estabilidad del desempeño","Seguridad: exposición legal y procedimental","Explicabilidad: documentación por decisión","Impacto ambiental: huella de cómputo"],
+      gets:["Informe de auditoría en las ocho dimensiones","Registro de riesgos por dimensión","Model card, si todavía no existe","Hoja de ruta de ajustes","Definición del servicio lista para procesos de contratación pública"]},
+  en:{tag:"Independent evaluation",name:"Audit",desc:"For organizations that already have models informing or making decisions. I independently evaluate the system across eight dimensions of responsibility.",para:"<b>Typical duration:</b> 6 to 12 weeks per system. At least one model in production is needed, with basic documentation and a technical owner available.",
+      does:["Accountability: traceability and owners","Transparency: documentation quality","Fairness: disaggregated metrics and bias analysis","Privacy and security: data handling","Reliability: performance stability","Safety: legal and procedural exposure","Explainability: decision-level documentation","Environmental impact: compute footprint"],
+      gets:["Audit report across the eight dimensions","Risk register by dimension","Model card, if one doesn't exist yet","Remediation roadmap","Service definition ready for public procurement processes"]}},
  {c:C.naranja,
-  es:{tag:"Sector financiero",name:"Modelos de riesgo LA/FT",desc:"Segmentación, scoring y ajuste de alertas para SARLAFT, con menos falsos positivos.",para:"<b>Pensado para</b> oficiales de cumplimiento y equipos de riesgo.",
-      does:["Segmentación de factores de riesgo","Scoring de clientes y contrapartes","Calibración de reglas de monitoreo transaccional","Revisión de la carga de alertas frente a la capacidad del equipo"],
-      gets:["Metodología documentada para el supervisor","Modelos y reglas implementables","Plan de monitoreo y recalibración"]},
-  en:{tag:"Financial sector",name:"AML/CFT risk models",desc:"Segmentation, scoring and alert tuning for SARLAFT, with fewer false positives.",para:"<b>Designed for</b> compliance officers and risk teams.",
-      does:["Risk-factor segmentation","Customer and counterparty scoring","Calibration of transaction-monitoring rules","Alert volume review against team capacity"],
-      gets:["Methodology documented for the supervisor","Deployable models and rules","Monitoring and recalibration plan"]}}
-];
-const RESP=[
- {c:C.vino,
-  es:{tag:"Evaluación independiente",name:"Auditoría de sesgos y explicabilidad",desc:"Revisar un modelo que ya está en uso, propio o de un proveedor, para saber si trata peor a algún grupo.",para:"<b>Antes de empezar</b> se necesita un modelo en producción y alguien del equipo técnico disponible para entrevistas.",
-      does:["Métricas de error y desempeño por grupo","Análisis de impacto dispar","Explicaciones globales y por caso","Revisión de la documentación existente"],
-      gets:["Informe de auditoría con hallazgos por dimensión","Registro de riesgos","Hoja de ruta de ajustes"]},
-  en:{tag:"Independent evaluation",name:"Bias and explainability audits",desc:"Review a model already in use, in-house or from a vendor, to find out whether it treats any group worse.",para:"<b>Before we start</b> you'll need a model in production and someone from the technical team available for interviews.",
-      does:["Error and performance metrics by group","Disparate impact analysis","Global and case-level explanations","Review of existing documentation"],
-      gets:["Audit report with findings by dimension","Risk register","Remediation roadmap"]}},
- {c:C.verde,
-  es:{tag:"Gobernanza",name:"Diseño responsable desde el inicio",desc:"Poner reglas claras antes de construir o comprar analítica de riesgo, y no al final como un trámite.",para:"<b>Sirve también</b> para preparar pliegos y criterios técnicos al contratar soluciones de IA.",
-      does:["Inventario y clasificación de riesgo de los modelos","Roles, comités y responsables","Criterios de equidad y umbrales antes de desarrollar","Formación a equipos técnicos, jurídicos y directivos"],
-      gets:["Política de uso responsable de IA","Plantillas de documentación de modelos","Protocolo de monitoreo después del despliegue"]},
-  en:{tag:"Governance",name:"Responsible by design",desc:"Set clear rules before building or buying risk analytics, not at the end as a formality.",para:"<b>Also useful</b> for drafting tender documents and technical criteria when procuring AI solutions.",
-      does:["Model inventory and risk classification","Roles, committees and owners","Fairness criteria and thresholds before development","Training for technical, legal and executive teams"],
-      gets:["Responsible AI use policy","Model documentation templates","Post-deployment monitoring protocol"]}}
+  es:{tag:"IA responsable desde el diseño",name:"Desarrollo de sistemas de IA",desc:"Para organizaciones que van a construir un sistema nuevo o reentrenar uno existente. Lo desarrollo con los controles de IA responsable integrados desde el principio, no como un parche al final.",para:"<b>Duración típica:</b> de 4 a 9 meses, acompañando todo el ciclo de desarrollo.",
+      does:["Encuadre del problema y de las personas afectadas","Evaluación de los datos antes de desarrollar","Desarrollo del modelo o sistema de IA","Métricas y umbrales de equidad definidos desde el diseño","Mitigación de sesgos durante el desarrollo","Revisión previa al despliegue","Diseño del monitoreo posterior"],
+      gets:["El sistema de IA, con su código documentado","Informe de evaluación de datos","Especificación de requisitos de equidad","Model card y documentación por decisión","Protocolo y tablero de monitoreo","Calendario de reevaluación"]},
+  en:{tag:"Responsible AI by design",name:"AI system development",desc:"For organizations about to build a new system or retrain an existing one. I develop it with responsible AI controls built in from the start, not patched on at the end.",para:"<b>Typical duration:</b> 4 to 9 months, across the full development cycle.",
+      does:["Framing the problem and the people affected","Data assessment before development","Development of the model or AI system","Fairness metrics and thresholds set at design time","Bias mitigation during development","Pre-deployment review","Post-deployment monitoring design"],
+      gets:["The AI system, with documented code","Data assessment report","Fairness requirements specification","Model card and decision-level documentation","Monitoring protocol and dashboard","Re-evaluation schedule"]}}
 ];
 function build(list,cardsId,detailId){
   const wrap=document.getElementById(cardsId), detail=document.getElementById(detailId);
@@ -742,7 +771,7 @@ function build(list,cardsId,detailId){
     wrap.appendChild(b); return b;
   });
 }
-function buildCards(){ build(DETECT,'cardsDetect','detailDetect'); build(RESP,'cardsResp','detailResp'); }
+function buildCards(){ build(SVC,'cardsSvc','detailSvc'); }
 
 /* ======================= nube de puntos ======================= */
 const FIELD_LABELS={es:['omiso','inexacto','posible fraude'],en:['non-filer','under-reported','possible fraud']};
